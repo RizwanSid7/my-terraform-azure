@@ -44,7 +44,7 @@ az account set --subscription "your-subscription-id"
 
 ### 3. Configure Your Variables
 
-Edit the `terraform.tfvars` file to set your specific values. This is where you’ll put things like your VM’s admin username and password. Make sure this file is kept secure!
+Edit the **`terraform.tfvars`** file to set your specific values. This is where you’ll put things like your** VM’s admin username and password.** Make sure this file is kept secure!
 
 Here’s an example of what `terraform.tfvars` might look like:
 
@@ -91,26 +91,27 @@ When you’re done, you can clean up everything with:
 terraform destroy
 ```
 
-Confirm with `yes` when prompted.
+Confirm with **`yes`** when prompted.
 
-Configuration Files
-main.tf
+**Configuration Files
+main.tf**
 This is your main configuration file where you define things like your resource group, virtual network, network interface, and the VM itself.
 
-variables.tf
+**variables.tf**
 Lists all the variables you can set, like VM size and location. These are used in main.tf.
 
-terraform.tfvars
+**terraform.tfvars**
 This file contains your actual values for the variables. It’s where you specify things like passwords and usernames.
 
-outputs.tf
+**outputs.tf**
 Defines what Terraform will output after deployment, like the VM’s public IP address.
 
-Example for Linux VM
-If you want to deploy a Linux VM instead of a Windows VM, just update main.tf to something like this:
+**Example for Linux VM**
+If you want to deploy a Linux VM instead of a Windows VM, just update **main.tf** to something like this:
 
-hcl
-Copy code
+_hcl
+Copy code_
+
 resource "azurerm_virtual_machine" "example" {
   name                  = "${var.prefix}-vm"
   location              = var.location
@@ -147,11 +148,11 @@ resource "azurerm_virtual_machine" "example" {
   }
 }
 
-Troubleshooting
+**Troubleshooting**
 
 Authentication Issues: Make sure you’re logged into Azure CLI and the right subscription is set.
 Large Files: If you run into problems with large files, consider using Git Large File Storage (LFS) or avoid committing large binaries.
 
-Contributing
+**Contributing**
 
 Got ideas for improvements or found a bug? Feel free to open an issue or submit a pull request!
