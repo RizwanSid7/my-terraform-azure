@@ -155,7 +155,3 @@ Large Files: If you run into problems with large files, consider using Git Large
 Contributing
 
 Got ideas for improvements or found a bug? Feel free to open an issue or submit a pull request!
-
-# my-terraform-azure
-Deploying Azure VM using terraform code.
->>>>>>> a8dde55b494d96599562a3bf7627683d4490d722
