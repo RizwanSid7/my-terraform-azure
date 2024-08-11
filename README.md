@@ -1,5 +1,5 @@
 
-# Terraform Azure Deployment
+# Terraform Azure Windwos Virtual Machine Deployment
 
 ## Hey there!
 
