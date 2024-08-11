@@ -9,7 +9,7 @@ Welcome to my Terraform Azure Virtual Machine Deployment. In this guide, I'll he
 
 Here’s what you’ll find in this repository:
 
-- **`main.tf`**: This is where the magic happens. It contains all the Terraform code to create your Azure resources, like the VM, virtual network, and more.
+- **`file1.tf`**: This is where the magic happens. It contains all the Terraform code to create your Azure resources, like the VM, virtual network, and more.
 - **`variables.tf`**: This file lists all the variables you can tweak, like VM size or location.
 - **`terraform.tfvars`**: Here’s where you put your specific values for the variables, like your admin password.
 - **`outputs.tf`**: This file tells Terraform what details to show you after deployment, like the public IP of your VM.
